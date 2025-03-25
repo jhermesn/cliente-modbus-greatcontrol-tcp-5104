@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ModbusLog {
+  id            Int      @id @default(autoincrement())
+  timestamp     DateTime @default(now())
+  host          String
+  port          Int
+  functionType  String
+  startAddress  Int
+  length        Int
+  writeData     String?
+  responseData  Json?
+  isSuccess     Boolean
+  errorMessage  String?
+  executionTime Int?     // in milliseconds
+
+  @@index([timestamp])
+  @@index([host, port])
+  @@index([functionType])
+}
