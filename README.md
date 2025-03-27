@@ -1,6 +1,5 @@
 # Cliente Modbus Greatcontrol TCP-5104
 - Uma ferramenta construída em React com Next.js e TailwindCSS com PostCSS para comunicação com um dispositivo Greatcontrol TCP-5104 via Modbus TCP que permite a leitura e monitoramento de registros, salvando os dados em um banco de dados PostgreSQL.
-- Desenvolvido durante meu estágio na Companhia de Saneamento do Pará (COSANPA) como estágiario em desenvolvimento de software full-stack.
 > Aviso: esse projeto tem presets para o Modbus Greatcontrol TCP-5104, mas pode ser facilmente adaptado para outros dispositivos Modbus.
 
 ## Características
